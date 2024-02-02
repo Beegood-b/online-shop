@@ -12,17 +12,19 @@ window.addEventListener("scroll", function () {
 const offcanvasCartEl = document.getElementById("offcanvasCart");
 const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
 
-document.querySelectorAll(".closecart").forEach((item) => {
-  item.addEventListener("click", (event) => {
+document.getElementById('opencart').addEventListener('click', (event) => {
+  event.preventDefault();
+  offcanvasCart.toggle();
+});
+
+document.querySelectorAll('closecart').forEach(item => {
+  item.addEventListener('click', (event) => {
     event.preventDefault();
     offcanvasCart.hide();
-    // let href = item.href.split('#').pop();
-    const href = item.dataset.href;
-    offcanvasCartEl.addEventListener("hidden.bs.offcanvas", () => {
-      document.getElementById(href).scrollIntoView();
-    });
-  });
-});
+    let href = item.dataset.href;
+    document.getElementById(href).scrollIntoView();
+  })
+})
 
 // button on scroll down
 

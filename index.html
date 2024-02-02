@@ -83,24 +83,14 @@
       <div class="header__middle bg-white py-4">
         <div class="container-fluid">
           <div class="row align-items-center">
-            <div class="col-lg-4 col-sm-6">
-              <a href="index.html" class="header__logo h1"><i class="fa-brands fa-shopware"></i>nlineShop</a>
+
+            <div class="col-sm-6">
+              <a href="index.html" class="header__logo h1">
+                <i class="fa-brands fa-shopware"></i>nlineShop</a>
             </div>
 
-            <div class="cart__buttons col-lg-4 order-md-2 text-end d-none d-lg-block">
-              <a href="#" class="btn p-1">
-                <i class="fa-solid fa-heart"></i>
-                <span class="cart__badge badge text-bg-warning bg-warning rounded-circle">3</span>
-              </a>
 
-              <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                aria-controls="offcanvasCart">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="cart__badge badge text-bg-warning bg-warning rounded-circle">5</span>
-              </button>
-            </div>
-
-            <div class="col-lg-4 col-sm-6 order-md-1 mt-2 mt-md-0">
+            <div class="col-sm-6 mt-2 mt-md-0">
               <form>
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Search" aria-label="Search"
@@ -111,36 +101,12 @@
                 </div>
               </form>
             </div>
+
           </div>
         </div>
+
       </div>
       <!-- ./header__middle  -->
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe magnam autem mollitia. Sed in eum sapiente nihil beatae omnis!
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item closecart" href="#footer" data-href="footer">Footer</a></li>
-              <li>
-                <a class="dropdown-item closecart" href="#about" data-href="about">About</a>
-              </li>
-              <li>
-                <a class="dropdown-item closecart" href="#map" data-href="map">Map</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </header>
 
     <div class="header__bottom sticky-top" id="header-nav">
@@ -225,13 +191,14 @@
               </ul>
             </div>
           </div>
-          <div class="d-block d-lg-none">
+
+          <div>
             <a href="#" class="btn p-1">
               <i class="fa-solid fa-heart"></i>
               <span class="cart__badge badge text-bg-warning bg-warning rounded-circle">3</span>
             </a>
 
-            <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+            <button class="btn p-1" id="opencart" type="button" data-bs-toggle="offcanvas2" data-bs-target="#offcanvasCart"
               aria-controls="offcanvasCart">
               <i class="fa-solid fa-cart-shopping"></i>
               <span class="cart__badge badge text-bg-warning bg-warning rounded-circle">5</span>
@@ -241,6 +208,71 @@
       </nav>
     </div>
     <!-- ./header__bottom  -->
+
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="table__responsive">
+          <table class="table offcanvasCart__table">
+            <tbody>
+              <tr>
+                <td class="product__img_td"><a href="#"><img src="assets/img/products/1.jpg" alt=""></a></td>
+                <td><a href="#">Product</a></td>
+                <td>$65</td>
+                <td>&times;1</td>
+                <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
+              </tr>
+
+              <tr>
+                <td class="product__img_td"><a href="#"><img src="assets/img/products/6.jpg" alt=""></a></td>
+                <td><a href="#">Product</a></td>
+                <td>$65</td>
+                <td>&times;2</td>
+                <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
+              </tr>
+
+              <tr>
+                <td class="product__img_td"><a href="#"><img src="assets/img/products/4.jpg" alt=""></a></td>
+                <td><a href="#">Product</a></td>
+                <td>$100</td>
+                <td>&times;1</td>
+                <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4" class="text-end"><strong>Total:</strong></td>
+                <td><strong>$295</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="text-end">
+          <a href="#" class="btn btn-outline-warning">Cart</a>
+          <a href="#" class="btn btn-outline-secondary">Checkout</a>
+        </div>
+
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item closecart" href="#footer" data-href="footer">Footer</a></li>
+            <li>
+              <a class="dropdown-item closecart" href="#about" data-href="about">About</a>
+            </li>
+            <li>
+              <a class="dropdown-item closecart" href="#map" data-href="map">Map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <main class="main">
       <div id="carousel" class="carousel slide carousel-fade">
