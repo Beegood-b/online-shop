@@ -15,8 +15,8 @@ body {
 
 body {
   min-width: 320px;
-  font-family: 'Montserrat', sans-serif;
-    background-color: var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -220,6 +220,38 @@ section {
 
 /* ========================== MAIN ============================= */
 
+/* ========================== CATEGORY PAGE ============================= */
+
+.breadcrumbs {
+  margin: 30px 0;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: var(--contrast-color);
+  transition: all 0.5s;
+  margin-right: 0.5rem;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent-color);
+}
+
+.breadcrumbs a::after {
+  content: "/";
+  padding-left: 0.5rem;
+  color: var(--contrast-color);
+}
+
 /* ========================== CAROUSEL ============================= */
 .carousel-caption {
   text-shadow: 0 0 2px rgb(0, 0, 1);
@@ -303,7 +335,7 @@ section {
   text-align: center;
   width: 80%;
   height: 400px;
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .product__thumb img {
@@ -411,8 +443,8 @@ section {
   background-color: var(--accent-color);
   opacity: 0.5;
   color: #fff;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: 0;
   font-size: 25px;
