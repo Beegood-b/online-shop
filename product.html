@@ -278,23 +278,23 @@
 
       <div class="container-fluid">
         <div class="row mb-5">
-          <div class="col-md-5 col-lg-4">
-              <div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade">
+          <div class="col-md-5 mb-5 mt-5 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+              <div id="carouselExampleFade" class="carousel carousel-dark slide">
                 <div class="carousel-inner">
                   <div class="carousel-item">
-                    <img src="./assets/img/products/1.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/products/1.jpg" style="height: 400px;" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/products/2.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/products/2.jpg" style="height: 400px;" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/products/3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/products/4.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/products/3.jpg" style="height: 400px;" alt="...">
                   </div>
                   <div class="carousel-item active">
-                    <img src="./assets/img/products/5.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/products/4.jpg" style="height: 400px;" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/products/5.jpg" style="height: 400px;" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -310,7 +310,7 @@
               </div>
           </div>
           <div class="col-md-7 col-lg-8 mb-3">
-            <div class="bg-white product__content p-3 h-100">
+            <div class="bg-white product__content p-3 h-100 d-flex flex-column justify-content-between">
               <h1 class="section__title h3"><span>Product</span></h1>
               <div class="product__price">
                 <small>$70</small>
@@ -333,7 +333,7 @@
                     <div class="card-body">
                       <h5 class="card-title"><i class="fa-solid fa-shield-halved"></i> Warranty</h5>
                       <ul class="list-unstyled">
-                        <li> 1 year warranty</li>
+                        <li> One year warranty</li>
                         <li> Return within 30 days</li>
                         <li> Quality guarantee</li>
                       </ul>
@@ -359,7 +359,7 @@
                       <ul class="list-unstyled">
                         <li> Cash payment</li>
                         <li> Card payment</li>
-                        <li> Visa/Mastercard</li>
+                        <li> Visa / Mastercard / PayPal</li>
                       </ul>
                     </div>
                   </div>
@@ -369,6 +369,277 @@
 
           </div>
         </div>
+
+        <div class="row mt-3">
+          <div class="col-12">
+            <div class="product__content_details bg-white p-4">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features-tab-pane" type="button" role="tab" aria-controls="features-tab-pane" aria-selected="false">Features</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane" type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">Video</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet reiciendis accusamus molestias. Eveniet itaque odio voluptates architecto recusandae officiis laborum. Mollitia, porro voluptatibus. Velit harum veniam doloremque! Explicabo, iure.</p>
+                <p>Cupiditate numquam quia perspiciatis nobis explicabo ex ducimus nemo laborum vitae fuga aliquam ullam expedita aspernatur, animi fugit repudiandae eius illo odio veniam est corrupti culpa. Enim eaque omnis rerum.</p></div>
+                <div class="tab-pane fade" id="features-tab-pane" role="tabpanel" aria-labelledby="features-tab" tabindex="0"><table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Colors</th>
+                      <td>White, Red, Pink</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Sizes</th>
+                      <td>S / M / L / XL</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+                  <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ID2txjvouJM?si=vJAuC3a5jWVE-LNv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="new__products">
+          <div class="container-fluid">
+            <div class="row mb-5">
+              <div class="col-12">
+                <h2 class="section__title">
+                  <span>You may also like</span>
+                </h2>
+              </div>
+            </div>
+  
+            <div class="px-lg-5 owl-carousel owl-theme owl-carousel-full">
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__new">New</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="./assets/img/products/3.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-">
+                    <div class="product__price">$80</div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__new">New</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="assets/img/products/9.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-center">
+                    <div class="product__price">
+                      <small>$90</small>
+                      $85
+                    </div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__new">New</div>
+                  <div class="offer__hit">Hit</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="./assets/img/products/5.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-center">
+                    <div class="product__price">
+                      <small>$250</small>
+                      $200
+                    </div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__new">New</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="./assets/img/products/4.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-center">
+                    <div class="product__price">$100</div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__hit">Hit</div>
+                  <div class="offer__new">New</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="./assets/img/products/1.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-center">
+                    <div class="product__price">
+                      <small>$70</small>
+                      $65
+                    </div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__new">New</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="./assets/img/products/8.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-center">
+                    <div class="product__price">
+                      <small>$150</small>
+                      $50
+                    </div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__hit">Hit</div>
+                  <div class="offer__new">New</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="./assets/img/products/5.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-center">
+                    <div class="product__price">
+                      <small>$250</small>
+                      $200
+                    </div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product__card">
+                <div class="product__card_offer">
+                  <div class="offer__new">New</div>
+                </div>
+                <div class="product__thumb">
+                  <a href="product.html"><img src="./assets/img/products/4.jpg" alt="" /></a>
+                </div>
+                <div class="product__details">
+                  <h4>
+                    <a href="products.html">Product</a>
+                  </h4>
+                  <p class="products__excerpt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                  <div class="product__bottom_details d-flex justify-content-center">
+                    <div class="product__price">$100</div>
+                    <div class="product__links">
+                      <a href="#" class="btn btn__outline_secondary add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
 
     </main>
 

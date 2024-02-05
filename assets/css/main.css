@@ -355,6 +355,14 @@ section {
   color: var(--text-color);
 }
 
+.nav-tabs .nav-link {
+  color: var(--contrast-color);
+}
+
+.tab-content {
+  padding-top: 20px;
+}
+
 /* ========================== CAROUSEL ============================= */
 .carousel-caption {
   text-shadow: 0 0 2px rgb(0, 0, 1);
@@ -570,13 +578,13 @@ section {
 
 #top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   background-color: var(--accent-color);
   opacity: 0.5;
   color: var(--contrast-color);
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border: 0;
   border-radius: 50%;
   font-size: 20px;
@@ -622,5 +630,13 @@ section {
   }
   .sidebar .collapse__filters_btn {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product__content_details .nav-tabs .nav-link {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
   }
 }
