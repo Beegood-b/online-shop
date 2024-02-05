@@ -189,8 +189,9 @@ section {
   text-decoration: underline;
 }
 
-.offcanvasCart__table img {
-  max-width: 50px;
+.offcanvasCart__table .product__img_td img {
+  height: 60px;
+  width: 50px;
 }
 
 .header__bottom {
@@ -321,6 +322,40 @@ section {
   color: var(--contrast-color);
 }
 
+/* ========================== PRODUCT PAGE ============================= */
+
+.product__content .product__price {
+  font-size: 25px;
+}
+
+.product__content .input-group {
+  width: 250px;
+}
+
+.product__content .card {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.product__content .card i {
+  color: var(--accent-color);
+}
+
+.product__content .card ul li::before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.product__content .card h5 {
+  color: var(--contrast-color);
+}
+
+.product__content .card li {
+  color: var(--text-color);
+}
+
 /* ========================== CAROUSEL ============================= */
 .carousel-caption {
   text-shadow: 0 0 2px rgb(0, 0, 1);
@@ -328,6 +363,11 @@ section {
 
 .carousel-caption .p {
   font-size: 1.5rem;
+}
+
+.carousel-item {
+  height: 500px;
+  overflow: hidden;
 }
 
 /*======================= ADVANTAGES =============================*/
@@ -473,7 +513,8 @@ section {
 }
 
 .about__us .section__title span,
-.sidebar .section__title span {
+.sidebar .section__title span,
+.product__content .section__title span {
   background-color: #fff;
 }
 
@@ -512,12 +553,12 @@ section {
   right: 20px;
   background-color: var(--accent-color);
   opacity: 0.5;
-  color: #fff;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  color: var(--contrast-color);
+  width: 40px;
+  height: 40px;
   border: 0;
-  font-size: 25px;
+  border-radius: 50%;
+  font-size: 20px;
   transition: all 0.5s;
   z-index: 10;
   display: none;
