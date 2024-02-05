@@ -378,189 +378,198 @@
           <div class="row">
             <div class="col-lg-3 col-md-4">
               <div class="sidebar">
-                <div class="filter-block">
-                  <h5 class="section__title"><span>Filter by color</span></h5>
-                  <form action="">
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="black"
-                        />
-                        <label class="form-check-label" for="black">
-                          Black
-                        </label>
-                      </div>
-                      <span class="badge border rounded-0">112</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="white"
-                        />
-                        <label class="form-check-label" for="white">
-                          White
-                        </label>
-                      </div>
-                      <span class="badge border rounded-0">87</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="red"
-                        />
-                        <label class="form-check-label" for="red"> Red </label>
-                      </div>
-                      <span class="badge border rounded-0">87</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="green"
-                        />
-                        <label class="form-check-label" for="green">
-                          Green
-                        </label>
-                      </div>
-                      <span class="badge border rounded-0">54</span>
-                    </div>
-                  </form>
-                </div>
 
-                <div class="filter-block">
-                  <h5 class="section__title"><span>Filter by size</span></h5>
-                  <form action="">
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="xs"
-                        />
-                        <label class="form-check-label" for="xs"> XS </label>
-                      </div>
-                      <span class="badge border rounded-0">11</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="s"
-                        />
-                        <label class="form-check-label" for="s"> S </label>
-                      </div>
-                      <span class="badge border rounded-0">87</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="m"
-                        />
-                        <label class="form-check-label" for="m"> M </label>
-                      </div>
-                      <span class="badge border rounded-0">33</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="l"
-                        />
-                        <label class="form-check-label" for="l"> L </label>
-                      </div>
-                      <span class="badge border rounded-0">25</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="xl"
-                        />
-                        <label class="form-check-label" for="xl"> XL </label>
-                      </div>
-                      <span class="badge border rounded-0">89</span>
-                    </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="xxl"
-                        />
-                        <label class="form-check-label" for="xxl"> XXL </label>
-                      </div>
-                      <span class="badge border rounded-0">54</span>
-                    </div>
-                  </form>
-                </div>
+                  <button class="btn btn-warning w-100 text-start collapse__filters_btn mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa-solid fa-list-check"></i> Filter
+                  </button>
 
-                <div class="filter-block">
-                  <h5 class="section__title"><span>Filter by type</span></h5>
-                  <form action="">
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="man"
-                        />
-                        <label class="form-check-label" for="man"> Man </label>
-                      </div>
-                      <span class="badge border rounded-0">156</span>
+                  <div class="collapse collapse__filters" id="collapseFilters">
+                    <div class="filter-block">
+                      <h5 class="section__title"><span>Filter by color</span></h5>
+                      <form action="">
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="black"
+                            />
+                            <label class="form-check-label" for="black">
+                              Black
+                            </label>
+                          </div>
+                          <span class="badge border rounded-0">112</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="white"
+                            />
+                            <label class="form-check-label" for="white">
+                              White
+                            </label>
+                          </div>
+                          <span class="badge border rounded-0">87</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="red"
+                            />
+                            <label class="form-check-label" for="red"> Red </label>
+                          </div>
+                          <span class="badge border rounded-0">87</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="green"
+                            />
+                            <label class="form-check-label" for="green">
+                              Green
+                            </label>
+                          </div>
+                          <span class="badge border rounded-0">54</span>
+                        </div>
+                      </form>
                     </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="woman"
-                        />
-                        <label class="form-check-label" for="woman">
-                          Woman
-                        </label>
-                      </div>
-                      <span class="badge border rounded-0">21</span>
+    
+                    <div class="filter-block">
+                      <h5 class="section__title"><span>Filter by size</span></h5>
+                      <form action="">
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="xs"
+                            />
+                            <label class="form-check-label" for="xs"> XS </label>
+                          </div>
+                          <span class="badge border rounded-0">11</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="s"
+                            />
+                            <label class="form-check-label" for="s"> S </label>
+                          </div>
+                          <span class="badge border rounded-0">87</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="m"
+                            />
+                            <label class="form-check-label" for="m"> M </label>
+                          </div>
+                          <span class="badge border rounded-0">33</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="l"
+                            />
+                            <label class="form-check-label" for="l"> L </label>
+                          </div>
+                          <span class="badge border rounded-0">25</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="xl"
+                            />
+                            <label class="form-check-label" for="xl"> XL </label>
+                          </div>
+                          <span class="badge border rounded-0">89</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="xxl"
+                            />
+                            <label class="form-check-label" for="xxl"> XXL </label>
+                          </div>
+                          <span class="badge border rounded-0">54</span>
+                        </div>
+                      </form>
                     </div>
-                    <div class="form-check d-flex justify-content-between">
-                      <div>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="kids"
-                        />
-                        <label class="form-check-label" for="kids">
-                          Kids
-                        </label>
-                      </div>
-                      <span class="badge border rounded-0">55</span>
+    
+                    <div class="filter-block">
+                      <h5 class="section__title"><span>Filter by type</span></h5>
+                      <form action="">
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="man"
+                            />
+                            <label class="form-check-label" for="man"> Man </label>
+                          </div>
+                          <span class="badge border rounded-0">156</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="woman"
+                            />
+                            <label class="form-check-label" for="woman">
+                              Woman
+                            </label>
+                          </div>
+                          <span class="badge border rounded-0">21</span>
+                        </div>
+                        <div class="form-check d-flex justify-content-between">
+                          <div>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="kids"
+                            />
+                            <label class="form-check-label" for="kids">
+                              Kids
+                            </label>
+                          </div>
+                          <span class="badge border rounded-0">55</span>
+                        </div>
+                      </form>
                     </div>
-                  </form>
-                </div>
+                  </div>
+
+
               </div>
             </div>
 
@@ -613,8 +622,283 @@
                 </div>
               </div>
             </div>
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer">
+                      <div class="offer__hit">Hit</div>
+                      <div class="offer__new">New</div>
+                    </div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/1.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">
+                          <small>$70</small>
+                          $65
+                        </div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer">
+                      <div class="offer__hit">Hit</div>
+                    </div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/2.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">$65</div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer"></div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/3.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">$80</div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer"></div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/4.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">$100</div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer">
+                      <div class="offer__hit">Hit</div>
+                      <div class="offer__new">New</div>
+                    </div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/5.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">
+                          <small>$250</small>
+                          $200
+                        </div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer"></div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/6.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">
+                          <small>$70</small>
+                          $65
+                        </div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer">
+                      <div class="offer__hit">Hit</div>
+                      <div class="offer__new">New</div>
+                    </div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/7.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">
+                          <small>$90</small>
+                          $85
+                        </div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer">
+                      <div class="offer__new">New</div>
+                    </div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/8.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">
+                          <small>$150</small>
+                          $50
+                        </div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+                  <div class="product__card">
+                    <div class="product__card_offer">
+                      <div class="offer__hit">Hit</div>
+                      <div class="offer__new">New</div>
+                    </div>
+                    <div class="product__thumb">
+                      <a href="product.html"><img src="./assets/img/products/1.jpg" alt="" /></a>
+                    </div>
+                    <div class="product__details">
+                      <h4>
+                        <a href="products.html">Product</a>
+                      </h4>
+                      <p class="products__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      </p>
+                      <div class="product__bottom_details d-flex justify-content-">
+                        <div class="product__price">
+                          <small>$70</small>
+                          $65
+                        </div>
+                        <div class="product__links">
+                          <a href="#" class="btn btn__outline_secondary add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="row">
+          <div class="d-flex justify-content-center align-items-center my-5">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       </main>
 
       <footer class="footer" id="footer">

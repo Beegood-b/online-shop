@@ -297,6 +297,30 @@ section {
   color: var(--text-color);
 }
 
+.page-link {
+  color: var(--contrast-color);
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.page-link:hover {
+  color: #fff;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.active > .page-link,
+.page-link.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.sidebar .collapse__filters_btn {
+  color: var(--contrast-color);
+}
+
 /* ========================== CAROUSEL ============================= */
 .carousel-caption {
   text-shadow: 0 0 2px rgb(0, 0, 1);
@@ -527,5 +551,14 @@ section {
 @media only screen and (min-width: 767px) {
   .advantages {
     gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar .collapse__filters {
+    display: block;
+  }
+  .sidebar .collapse__filters_btn {
+    display: none;
   }
 }
