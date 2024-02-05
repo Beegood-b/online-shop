@@ -163,6 +163,18 @@ section {
   transition: 0.3s;
 }
 
+.cart__bottom h6 {
+  font-size: 14px;
+}
+
+.cart__bottom p {
+  font-size: 12px;
+}
+
+.cart__bottom img {
+  width: 50%;
+}
+
 .offcanvasCart__table .product__img_td {
   width: 70px;
   text-align: center;
@@ -250,6 +262,39 @@ section {
   content: "/";
   padding-left: 0.5rem;
   color: var(--contrast-color);
+}
+
+.sidebar {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-block:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.filter-block .form-check {
+  margin-bottom: 0.5rem;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+  border-color: var(--gray-color);
+}
+
+.form-check-input:focus {
+  border-color: var(--gray-color);
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.filter-block .badge {
+  color: var(--text-color);
 }
 
 /* ========================== CAROUSEL ============================= */
@@ -403,7 +448,8 @@ section {
   background-color: #fff;
 }
 
-.about__us .section__title span {
+.about__us .section__title span,
+.sidebar .section__title span {
   background-color: #fff;
 }
 

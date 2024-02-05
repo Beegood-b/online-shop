@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Shop | Category</title>
+    <title>Online Shop | Categories</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -109,7 +109,8 @@
             <div class="row align-items-center">
               <div class="col-sm-6">
                 <a href="index.html" class="header__logo h1">
-                  <img src="/assets/img/logo.svg" alt=""></a>
+                  <img src="/assets/img/logo.svg" alt=""
+                /></a>
               </div>
 
               <div class="col-sm-6 mt-2 mt-md-0">
@@ -171,7 +172,7 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                    <a class="nav-link active" aria-current="page" href="index.html"
                       >Home</a
                     >
                   </li>
@@ -201,7 +202,7 @@
                       aria-expanded="false"
                       data-bs-auto-close="outside"
                     >
-                      Catalog
+                      Categories
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
@@ -265,7 +266,7 @@
                 <i class="fa-solid fa-heart"></i>
                 <span
                   class="cart__badge badge text-bg-warning bg-warning rounded-circle"
-                  >3</span
+                  >1</span
                 >
               </a>
 
@@ -280,7 +281,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span
                   class="cart__badge badge text-bg-warning bg-warning rounded-circle"
-                  >5</span
+                  >3</span
                 >
               </button>
             </div>
@@ -289,71 +290,37 @@
       </div>
       <!-- ./header__bottom  -->
 
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasCart"
-        aria-labelledby="offcanvasCartLabel"
-      >
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+          <h5 class="offcanvas-title" id="offcanvasCartLabel">Shopping Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
           <div class="table__responsive">
             <table class="table offcanvasCart__table">
               <tbody>
                 <tr>
-                  <td class="product__img_td">
-                    <a href="#"
-                      ><img src="assets/img/products/1.jpg" alt=""
-                    /></a>
-                  </td>
+                  <td class="product__img_td"><a href="#"><img src="assets/img/products/1.jpg" alt=""></a></td>
                   <td><a href="#">Product</a></td>
                   <td>$65</td>
                   <td>&times;1</td>
-                  <td>
-                    <button class="btn btn-danger">
-                      <i class="fa-regular fa-circle-xmark"></i>
-                    </button>
-                  </td>
+                  <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
                 </tr>
-
+  
                 <tr>
-                  <td class="product__img_td">
-                    <a href="#"
-                      ><img src="assets/img/products/6.jpg" alt=""
-                    /></a>
-                  </td>
+                  <td class="product__img_td"><a href="#"><img src="assets/img/products/6.jpg" alt=""></a></td>
                   <td><a href="#">Product</a></td>
                   <td>$65</td>
                   <td>&times;2</td>
-                  <td>
-                    <button class="btn btn-danger">
-                      <i class="fa-regular fa-circle-xmark"></i>
-                    </button>
-                  </td>
+                  <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
                 </tr>
-
+  
                 <tr>
-                  <td class="product__img_td">
-                    <a href="#"
-                      ><img src="assets/img/products/4.jpg" alt=""
-                    /></a>
-                  </td>
+                  <td class="product__img_td"><a href="#"><img src="assets/img/products/4.jpg" alt=""></a></td>
                   <td><a href="#">Product</a></td>
                   <td>$100</td>
                   <td>&times;1</td>
-                  <td>
-                    <button class="btn btn-danger">
-                      <i class="fa-regular fa-circle-xmark"></i>
-                    </button>
-                  </td>
+                  <td><button class="btn btn-danger"><i class="fa-regular fa-circle-xmark"></i></button></td>
                 </tr>
               </tbody>
               <tfoot>
@@ -363,44 +330,32 @@
                 </tr>
               </tfoot>
             </table>
+            <div class="text-end">
+              <a href="#" class="btn btn-outline-warning">View Cart</a>
+              <a href="#" class="btn btn-outline-secondary">Checkout</a>
+            </div>
           </div>
-
-          <div class="text-end">
-            <a href="#" class="btn btn-outline-warning">Cart</a>
-            <a href="#" class="btn btn-outline-secondary">Checkout</a>
-          </div>
-
-          <div class="dropdown mt-3">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a
-                  class="dropdown-item closecart"
-                  href="#footer"
-                  data-href="footer"
-                  >Footer</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item closecart"
-                  href="#about"
-                  data-href="about"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item closecart" href="#map" data-href="map"
-                  >Map</a
-                >
-              </li>
-            </ul>
+  
+  
+  
+          <div class="cart__bottom d-flex flex-column align-items-end">
+            <h6>WE ACCEPT:</h6>
+            <img class="my-3" src="./assets/img/single.png" alt="">
+            <p>Got a discount code? Add it in the next step.</p>
+            <!-- <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item closecart" href="#footer" data-href="footer">Footer</a></li>
+                <li>
+                  <a class="dropdown-item closecart" href="#about" data-href="about">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item closecart" href="#map" data-href="map">Map</a>
+                </li>
+              </ul>
+            </div> -->
           </div>
         </div>
       </div>
@@ -422,9 +377,243 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-3 col-md-4">SIDEBAR</div>
+            <div class="col-lg-3 col-md-4">
+              <div class="sidebar">
+                <div class="filter-block">
+                  <h5 class="section__title"><span>Filter by color</span></h5>
+                  <form action="">
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="black"
+                        />
+                        <label class="form-check-label" for="black">
+                          Black
+                        </label>
+                      </div>
+                      <span class="badge border rounded-0">112</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="white"
+                        />
+                        <label class="form-check-label" for="white">
+                          White
+                        </label>
+                      </div>
+                      <span class="badge border rounded-0">87</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="red"
+                        />
+                        <label class="form-check-label" for="red"> Red </label>
+                      </div>
+                      <span class="badge border rounded-0">87</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="green"
+                        />
+                        <label class="form-check-label" for="green">
+                          Green
+                        </label>
+                      </div>
+                      <span class="badge border rounded-0">54</span>
+                    </div>
+                  </form>
+                </div>
 
-            <div class="col-lg-9 col-md-8">CONTENT</div>
+                <div class="filter-block">
+                  <h5 class="section__title"><span>Filter by size</span></h5>
+                  <form action="">
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="xs"
+                        />
+                        <label class="form-check-label" for="xs"> XS </label>
+                      </div>
+                      <span class="badge border rounded-0">11</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="s"
+                        />
+                        <label class="form-check-label" for="s"> S </label>
+                      </div>
+                      <span class="badge border rounded-0">87</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="m"
+                        />
+                        <label class="form-check-label" for="m"> M </label>
+                      </div>
+                      <span class="badge border rounded-0">33</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="l"
+                        />
+                        <label class="form-check-label" for="l"> L </label>
+                      </div>
+                      <span class="badge border rounded-0">25</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="xl"
+                        />
+                        <label class="form-check-label" for="xl"> XL </label>
+                      </div>
+                      <span class="badge border rounded-0">89</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="xxl"
+                        />
+                        <label class="form-check-label" for="xxl"> XXL </label>
+                      </div>
+                      <span class="badge border rounded-0">54</span>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="filter-block">
+                  <h5 class="section__title"><span>Filter by type</span></h5>
+                  <form action="">
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="man"
+                        />
+                        <label class="form-check-label" for="man"> Man </label>
+                      </div>
+                      <span class="badge border rounded-0">156</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="woman"
+                        />
+                        <label class="form-check-label" for="woman">
+                          Woman
+                        </label>
+                      </div>
+                      <span class="badge border rounded-0">21</span>
+                    </div>
+                    <div class="form-check d-flex justify-content-between">
+                      <div>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="kids"
+                        />
+                        <label class="form-check-label" for="kids">
+                          Kids
+                        </label>
+                      </div>
+                      <span class="badge border rounded-0">55</span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9 col-md-8">
+              <div class="row mb-3">
+                <div class="col-12">
+                  <h1 class="section__title h3"><span>Category Name</span></h1>
+                </div>
+                <div class="col-4 col-sm-2">
+                  <img
+                    src="./assets/img/products/6.jpg"
+                    alt=""
+                    class="img-thumbnail"
+                  />
+                </div>
+                <div class="col-8 col-sm-10">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Excepturi exercitationem, totam, quis eaque vitae
+                    necessitatibus error mollitia facilis, laborum reprehenderit
+                    minus dolores at quibusdam. Deleniti minus assumenda iste
+                    eaque doloribus?
+                  </p>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Sort</span>
+                    <select class="form-select" aria-label="Sort:">
+                      <option selected>Name (A-Z)</option>
+                      <option value="1">Name (Z-A)</option>
+                      <option value="2">Price (Low to High)</option>
+                      <option value="3">Price (Low to High)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Show</span>
+                    <select class="form-select" aria-label="Show:">
+                    <option selected>9</option>
+                    <option value="1">15</option>
+                    <option value="2">30</option>
+                    <option value="3">45</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
