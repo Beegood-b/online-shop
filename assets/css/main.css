@@ -20,6 +20,9 @@ body {
   color: var(--text-color);
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
 a {
   color: var(--text-color);
   text-decoration: underline;
@@ -74,10 +77,6 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-main.main {
-  flex: 1 1 auto;
 }
 
 section {
@@ -365,10 +364,32 @@ section {
   font-size: 1.5rem;
 }
 
-/* .carousel-item {
-  height: 500px;
+.product__offer {
+  position: relative;
   overflow: hidden;
-} */
+}
+
+.product__offer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.product__offer .offer__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(61, 70, 77, 0.5);
+  z-index: 1;
+}
 
 /*======================= ADVANTAGES =============================*/
 
