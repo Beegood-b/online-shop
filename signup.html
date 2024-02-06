@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop | Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/owlcarousel/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top py-1">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 col-sm-4">
+                <div
+                  class="header__top_contacts d-flex align-items-center h-100"
+                >
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <a href="tel:+123456789" class="ms-2">(+123)4567890</a>
+                </div>
+              </div>
+
+              <div class="col-sm-4 d-none d-sm-block">
+                <ul class="social__icons d-flex justify-content-center">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-sm-4">
+                <div class="header__top_account d-flex justify-content-end">
+                  <div class="btn-group me-2">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-sm dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-regular fa-user"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Sign In</a></li>
+                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="btn-group">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-sm dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        EN
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">FR</a></li>
+                        <li><a class="dropdown-item" href="#">DE</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- header__top-account -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./header__top  -->
+
+        <div class="header__middle bg-white py-4">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-sm-6">
+                <a href="index.html" class="header__logo h1">
+                  <img src="./assets/img/logo.svg" alt=""
+                /></a>
+              </div>
+
+              <div class="col-sm-6 mt-2 mt-md-0">
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="button-search"
+                    />
+                    <button
+                      class="btn btn-outline-warning"
+                      type="submit"
+                      id="button-search"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./header__middle  -->
+      </header>
+
+      <div class="header__bottom sticky-top" id="header-nav">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-start"
+              id="offcanvasNavbar"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Catalog</h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Payment</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Delivery</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-bs-auto-close="outside"
+                    >
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item" href="category.html"
+                          >Jackets</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="category.html">Shirts</a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="category.html">Jeans</a>
+                      </li>
+
+                      <li class="nav-item dropend">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside"
+                          >Sportswear</a
+                        >
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li>
+                            <a class="dropdown-item" href="category.html"
+                              >Men Sportswear</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="category.html"
+                              >Women Sportswear</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="category.html"
+                              >Baby Sportswear</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="category.html"
+                          >Accesories</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="category.html">Shoes</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <a href="#" class="btn p-1">
+                <i class="fa-solid fa-heart"></i>
+                <span
+                  class="cart__badge badge text-bg-warning bg-warning rounded-circle"
+                  >1</span
+                >
+              </a>
+
+              <button
+                class="btn p-1"
+                id="opencart"
+                type="button"
+                data-bs-toggle="offcanvas2"
+                data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  class="cart__badge badge text-bg-warning bg-warning rounded-circle"
+                  >3</span
+                >
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- ./header__bottom  -->
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasCart"
+        aria-labelledby="offcanvasCartLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasCartLabel">Shopping Cart</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <div class="table__responsive">
+            <table class="table offcanvasCart__table">
+              <tbody>
+                <tr>
+                  <td class="product__img_td">
+                    <a href="#"
+                      ><img src="assets/img/products/1.jpg" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="#">Product</a></td>
+                  <td>$65</td>
+                  <td>&times;1</td>
+                  <td>
+                    <button class="btn btn-danger">
+                      <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="product__img_td">
+                    <a href="#"
+                      ><img src="assets/img/products/6.jpg" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="#">Product</a></td>
+                  <td>$65</td>
+                  <td>&times;2</td>
+                  <td>
+                    <button class="btn btn-danger">
+                      <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="product__img_td">
+                    <a href="#"
+                      ><img src="assets/img/products/4.jpg" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="#">Product</a></td>
+                  <td>$100</td>
+                  <td>&times;1</td>
+                  <td>
+                    <button class="btn btn-danger">
+                      <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4" class="text-end"><strong>Total:</strong></td>
+                  <td><strong>$295</strong></td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="text-end">
+              <a href="#" class="btn btn-secondary">View Cart</a>
+              <a href="#" class="btn btn-warning">Checkout</a>
+            </div>
+          </div>
+
+          <div class="cart__bottom d-flex flex-column align-items-end mt-3">
+            <h6>WE ACCEPT:</h6>
+            <img class="my-3" src="./assets/img/single.png" alt="" />
+            <p>Got a discount code? Add it in the next step.</p>
+          </div>
+        </div>
+      </div>
+
+      <main class="main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <nav class="breadcrumbs">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><span>Sign Up</span></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="container-fluid mb-3">
+        <div class="row">
+          <div class="col-12">
+            <div class="page__signup bg-white p-3">
+              <h1 class="section__title h3"><span>Create Accont</span></h1>
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <form action="" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Name"
+                        required
+                      />
+                      <div class="invalid-feedback">Name is required</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >E-mail</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="john-doe@example.com"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please select a valid e-mail
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label"
+                        >Phone</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Phone"
+                        required
+                      />
+                      <div class="invalid-feedback">Phone is required</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Password"
+                        required
+                      />
+                      <div class="invalid-feedback">Password is required</div>
+                    </div>
+                    <div class="mb-3">
+                      <button type="submit" class="btn btn-warning">
+                        Continue
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer" id="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <h4>Info</h4>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <h4>Working Hours</h4>
+              <ul class="list-unstyled">
+                <li>Paris, Rue Bleue 18</li>
+                <li>Mon - Fri: 10am - 8pm</li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <h4>Contacts</h4>
+              <ul class="list-unstyled">
+                <li><a href="tel:123456789">(+123) 456-7890</a></li>
+                <li><a href="tel:123456789">(+123) 098-7654</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <h4>Follow Us</h4>
+              <ul class="footer__icons list-unstyled">
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <button id="top">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

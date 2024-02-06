@@ -543,7 +543,7 @@ section {
 
 .about__us .section__title span,
 .sidebar .section__title span,
-.product__content .section__title span {
+.bg-white .section__title span {
   background-color: #fff;
 }
 
