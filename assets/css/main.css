@@ -28,6 +28,10 @@ a {
   text-decoration: underline;
 }
 
+textarea {
+  resize: none;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -41,6 +45,10 @@ img {
 .dropdown-menu,
 .form-control {
   border-radius: 0;
+}
+
+.btn i {
+  padding-right: 5px;
 }
 
 .form-control:focus {
@@ -363,6 +371,54 @@ section {
   padding-top: 20px;
 }
 
+/* ========================== CART PAGE ============================= */
+
+.table-dark {
+  background-color: var(--contrast-color);
+}
+
+.cart__content table img {
+  width: 50px;
+  height: 60px;
+}
+
+.cart__content table td {
+  padding: 1rem;
+}
+
+.cart__content th {
+  text-align: center;
+}
+
+.cart__content td {
+  text-align: center;
+}
+
+.cart__content_title {
+  text-decoration: none;
+  display: block;
+}
+
+.cart__quantity {
+  width: 60px;
+}
+
+.btn__coupon {
+  color: var(--text-color);
+}
+
+.btn__coupon:hover {
+  color: var(--contrast-color);
+}
+
+.cart__summary h3 {
+  color: #000;
+}
+
+.cart__summary .btn {
+  padding: 1rem;
+}
+
 /* ========================== CAROUSEL ============================= */
 .carousel-caption {
   text-shadow: 0 0 2px rgb(0, 0, 1);
@@ -552,7 +608,7 @@ section {
 .footer {
   background-color: var(--contrast-color);
   color: #fff;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
 .footer h4 {
@@ -597,6 +653,27 @@ section {
   opacity: 1;
 }
 
+.footer li {
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.info i {
+  color: var(--accent-color);
+  padding-right: 0.5rem;
+}
+
+.border__footer {
+  border-bottom: solid 1px gray;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.border__image img {
+  width: 200px;
+  padding-bottom: 5px;
+}
 /* ========================== MEDIA ============================= */
 
 @media only screen and (min-width: 992px) {

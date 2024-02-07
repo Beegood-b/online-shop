@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Shop | Sign In</title>
+    <title>Online Shop | Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -74,8 +74,16 @@
                         <i class="fa-regular fa-user"></i> Account
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
-                        <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                        <li>
+                          <a class="dropdown-item" href="signin.html"
+                            >Sign In</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="signup.html"
+                            >Sign Up</a
+                          >
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -388,7 +396,7 @@
               <nav class="breadcrumbs">
                 <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><span>Sign In</span></li>
+                  <li><span>Shopping Cart</span></li>
                 </ul>
               </nav>
             </div>
@@ -396,46 +404,147 @@
         </div>
       </main>
 
-      <div class="container-fluid mb-3">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-            <div class="page__signup bg-white p-3">
-              <h1 class="section__title h3"><span>Login</span></h1>
-              <div class="row">
-                <div class="col-md-6 offset-md-3">
-                  <form action="" class="needs-validation" novalidate>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">E-mail</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="john-doe@example.com"
-                        required
-                      />
-                      <div class="invalid-feedback">
-                        Please select a valid e-mail
-                      </div>
-                    </div>
+          <div class="col-lg-8 mb-3">
+            <div class="cart__content p-3 bg-white">
+              <div class="table-responsive">
+                <table class="table align-middle table-hover">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>Product</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th><i class="fa-solid fa-trash-can"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="product__img_td">
+                        <a href="product.html"
+                          ><img src="assets/img/products/1.jpg" alt=""
+                        /></a>
+                      </td>
+                      <td>
+                        <a href="product.html" class="cart__content_title"
+                          >Product</a
+                        >
+                      </td>
+                      <td>$65</td>
+                      <td>
+                        <input
+                          type="number"
+                          value="1"
+                          class="form-control cart__quantity"
+                        />
+                      </td>
+                      <td>
+                        <button class="btn btn-danger">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                        </button>
+                      </td>
+                    </tr>
 
-                    <div class="mb-3">
-                      <label for="password" class="form-label">Password</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="password"
-                        placeholder="Password"
-                        required
-                      />
-                      <div class="invalid-feedback">Password is required</div>
-                    </div>
-                    <div class="mb-3">
-                      <button type="submit" class="btn btn-warning">
-                        Continue
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                    <tr>
+                      <td class="product__img_td">
+                        <a href="product.html"
+                          ><img src="assets/img/products/6.jpg" alt=""
+                        /></a>
+                      </td>
+                      <td>
+                        <a href="product.html" class="cart__content_title"
+                          >Product</a
+                        >
+                      </td>
+                      <td>$65</td>
+                      <td>
+                        <input
+                          type="number"
+                          value="2"
+                          class="form-control cart__quantity"
+                        />
+                      </td>
+                      <td>
+                        <button class="btn btn-danger">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="product__img_td">
+                        <a href="product.html"
+                          ><img src="assets/img/products/4.jpg" alt=""
+                        /></a>
+                      </td>
+                      <td>
+                        <a href="product.html" class="cart__content_title"
+                          >Product</a
+                        >
+                      </td>
+                      <td>$100</td>
+                      <td>
+                        <input
+                          type="number"
+                          value="1"
+                          class="form-control cart__quantity"
+                        />
+                      </td>
+                      <td>
+                        <button class="btn btn-danger">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <div class="cart__summary p-3 sidebar">
+              <h5 class="section__title">
+                <span>Cart Summary</span>
+              </h5>
+              <div class="d-flex justify-content-between my-3">
+                <h6>Subtotal</h6>
+                <h6>$295</h6>
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <h6>Coupon</h6>
+                <h6>-$20</h6>
+              </div>
+              <div class="d-flex justify-content-between my-3 border-bottom">
+                <h6>Shipping</h6>
+                <h6>$10</h6>
+              </div>
+
+              <button
+                class="btn btn-link px-0 btn__coupon"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseCoupon"
+              >
+                Have a Coupon?
+              </button>
+
+              <div class="input-group collapse" id="collapseCoupon">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Coupon Code"
+                />
+                <button class="btn btn-warning">
+                  <i class="fa-regular fa-circle-check"></i>
+                </button>
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <h3>Total</h3>
+                <h3>$285</h3>
+              </div>
+              <div class="d-grid">
+                <a href="#" class="btn btn-warning">Checkout</a>
               </div>
             </div>
           </div>

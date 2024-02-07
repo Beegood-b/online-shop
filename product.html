@@ -51,7 +51,7 @@
                   <div class="dropdown">
                     <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      <i class="fa-regular fa-user"></i>
+                      <i class="fa-regular fa-user"></i> Account
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
@@ -246,8 +246,8 @@
             </tfoot>
           </table>
           <div class="text-end">
-            <a href="#" class="btn btn-secondary">View Cart</a>
-            <a href="#" class="btn btn-warning">Checkout</a>
+            <a href="cart.html" class="btn btn-secondary">View Cart</a>
+            <a href="checkout.html" class="btn btn-warning">Checkout</a>
           </div>
         </div>
 
@@ -281,7 +281,7 @@
           <div class="col-md-5 mb-5 mt-5 col-lg-4 d-flex flex-column justify-content-center align-items-center">
               <div id="carouselExampleFade" class="carousel carousel-dark slide">
                 <div class="carousel-inner">
-                  <div class="carousel-item">
+                  <div class="carousel-item active">
                     <img src="./assets/img/products/1.jpg" style="height: 400px;" alt="...">
                   </div>
                   <div class="carousel-item">
@@ -290,7 +290,7 @@
                   <div class="carousel-item">
                     <img src="./assets/img/products/3.jpg" style="height: 400px;" alt="...">
                   </div>
-                  <div class="carousel-item active">
+                  <div class="carousel-item">
                     <img src="./assets/img/products/4.jpg" style="height: 400px;" alt="...">
                   </div>
                   <div class="carousel-item">
@@ -645,48 +645,76 @@
 
     <footer class="footer" id="footer">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3 col-6">
-            <h4>Info</h4>
+        <div class="row px-lg-5 mb-3">
+
+          <div class="info col-md-3 col-6">
+            <h4>Get In Touch</h4>
             <ul class="list-unstyled">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Payment</a></li>
-              <li><a href="#">Delivery</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li>Duo stet tempor ipsum sit amet <br> magna ipsum tempor est</li>
+              </ul>
+            <ul class="list-unstyled">
+              <li><a href="tel:123456789"><i class="fa-solid fa-location-dot"></i> Paris, Rue Bleue 18</a></li>
+              <li><a href="tel:123456789"><i class="fa-solid fa-phone"></i> (+123) 456-7890</a></li>
+              <li><a href="email:info@example.com"><i class="fa-solid fa-envelope"></i> info@example.com</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-3 col-6">
+            <h4>Quick Shop</h4>
+            <ul class="list-unstyled">
+              <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Payment</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Delivery</a></li>
+              <li><a href="cart.html"><i class="fa-solid fa-chevron-right"></i> Shopping Cart</a></li>
+              <li><a href="checkout.html"><i class="fa-solid fa-chevron-right"></i> Checkout</a></li>
             </ul>
           </div>
 
           <div class="col-md-3 col-6">
-            <h4>Working Hours</h4>
+            <h4>My Account</h4>
             <ul class="list-unstyled">
-              <li>Paris, Rue Bleue 18</li>
-              <li>Mon - Fri: 10am - 8pm</li>
+              <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Payment</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Delivery</a></li>
+              <li><a href="cart.html"><i class="fa-solid fa-chevron-right"></i> Shopping Cart</a></li>
+              <li><a href="checkout.html"><i class="fa-solid fa-chevron-right"></i> Checkout</a></li>
             </ul>
           </div>
 
           <div class="col-md-3 col-6">
-            <h4>Contacts</h4>
+            <h4>News Letter</h4>
             <ul class="list-unstyled">
-              <li><a href="tel:123456789">(+123) 456-7890</a></li>
-              <li><a href="tel:123456789">(+123) 098-7654</a></li>
+            <li>Duo stet tempor ipsum sit amet <br> magna ipsum tempor est</li>
             </ul>
-          </div>
-
-          <div class="col-md-3 col-6">
-            <h4>Follow Us</h4>
+            <form action="">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Your Email Address">
+                    
+                        <button class="btn btn-warning">Sign Up</button>
+                    
+                </div>
+            </form>
+            <h4>Social Media</h4>
             <ul class="footer__icons list-unstyled">
-              <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-            </ul>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            </div>
+            <div class="border__footer mb-5"></div>
+        <div class="row d-flex align-items-center text-center">
+          <div class="col-md-6 py-2">
+            <span style="font-size: 13px;">&copy; Online Shop. All Rights Reserved.</span>
+          </div>
+          <div class="border__image col-md-6">
+            <img src="./assets/img/single.png" alt="">
           </div>
         </div>
+        </div>
+        </div>
+      </div>
       </div>
     </footer>
   </div>

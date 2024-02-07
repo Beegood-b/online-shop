@@ -1,21 +1,26 @@
-// validation 
+
+// validation
 
 (() => {
-  'use strict'
+  "use strict";
 
-  const forms = document.querySelectorAll('.needs-validation')
+  const forms = document.querySelectorAll(".needs-validation");
 
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
 
 // scroll
 
@@ -25,25 +30,24 @@ window.addEventListener("scroll", function () {
     .classList.toggle("headernav-scroll", window.scrollY > 135);
 });
 
-
-// closing cart 
+// closing cart
 
 const offcanvasCartEl = document.getElementById("offcanvasCart");
 const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
 
-document.getElementById('opencart').addEventListener('click', (event) => {
+document.getElementById("opencart").addEventListener("click", (event) => {
   event.preventDefault();
   offcanvasCart.toggle();
 });
 
-document.querySelectorAll('closecart').forEach(item => {
-  item.addEventListener('click', (event) => {
+document.querySelectorAll("closecart").forEach((item) => {
+  item.addEventListener("click", (event) => {
     event.preventDefault();
     offcanvasCart.hide();
     let href = item.dataset.href;
     document.getElementById(href).scrollIntoView();
-  })
-})
+  });
+});
 
 // button on scroll down
 
@@ -61,7 +65,7 @@ $(document).ready(function () {
     return false;
   });
 
-// carousel
+  // carousel
 
   $(".owl-carousel-full").owlCarousel({
     margin: 20,
