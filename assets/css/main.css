@@ -419,6 +419,16 @@ section {
   padding: 1rem;
 }
 
+.cart__summary tbody td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cart__summary tfoot td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /* ========================== CAROUSEL ============================= */
 .carousel-caption {
   text-shadow: 0 0 2px rgb(0, 0, 1);
@@ -467,8 +477,8 @@ section {
   transition: all 0.3s;
 }
 
-.advantages .item:hover {
-  box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
+.advantages .item {
+  box-shadow: 0 15px 35px -25px rgba(0, 0, 0, 0.5);
 }
 
 .advantages i {
@@ -625,13 +635,6 @@ section {
   color: var(--accent-color);
 }
 
-.footer__icons {
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  font-size: 20px;
-}
-
 #top {
   position: fixed;
   bottom: 20px;
@@ -654,9 +657,34 @@ section {
 }
 
 .footer li {
-  font-size: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer__icons {
+  display: flex;
+}
+
+.footer__icons li {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer__icons i {
+  color: var(--contrast-color);
+  background-color: var(--text-color);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.account i {
+  padding-right: 0.5rem;
+}
+
+.quickshop i {
+  padding-right: 0.5rem;
 }
 
 .info i {
@@ -666,7 +694,7 @@ section {
 
 .border__footer {
   border-bottom: solid 1px gray;
-  width: 90%;
+  width: 93%;
   margin: 0 auto;
 }
 
