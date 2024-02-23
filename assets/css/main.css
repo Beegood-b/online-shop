@@ -681,10 +681,13 @@ section {
   transition: all 0.5s;
   z-index: 10;
   display: none;
+  animation: bounce 6s 1s 10 ease-in;
+  transition: opacity 0.3s ease;
 }
 
 #top:hover {
   opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .footer li {
