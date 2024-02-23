@@ -671,18 +671,21 @@ section {
   bottom: 20px;
   right: 20px;
   background-color: var(--accent-color);
-  opacity: 0.5;
+  opacity: 0.7;
   color: var(--contrast-color);
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border: 0;
   border-radius: 50%;
   font-size: 20px;
-  transition: all 0.5s;
   z-index: 10;
   display: none;
-  animation: bounce 6s 1s 10 ease-in;
+  animation: bouncing 1s infinite alternate;
   transition: opacity 0.3s ease;
+}
+
+#top i {
+  font-size: 1rem;
 }
 
 #top:hover {
@@ -853,5 +856,15 @@ section {
     padding-left: 8px;
     padding-right: 8px;
     font-size: 14px;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-25px);
   }
 }
